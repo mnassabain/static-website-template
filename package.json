@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^7.0.1"
+    "autoprefixer": "^10.4.2",
+    "node-sass": "^7.0.1",
+    "postcss-cli": "^9.1.0"
   }
 }

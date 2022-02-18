@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "css:lint": "stylelint src/scss/*.scss",
     "css:scss": "node-sass --output-style compressed -o dist src/scss",
     "css:autoprefixer": "postcss -u autoprefixer -r dist/*.css",
-    "build:css": "npm run css:scss && npm run css:autoprefixer"
+    "build:css": "npm run css:lint && npm run css:scss && npm run css:autoprefixer"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +16,7 @@
     "autoprefixer": "^10.4.2",
     "node-sass": "^7.0.1",
     "postcss-cli": "^9.1.0",
-    "stylelint": "^14.5.1"
+    "stylelint": "^14.5.1",
+    "stylelint-config-standard-scss": "^3.0.0"
   }
 }
